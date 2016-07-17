@@ -1,0 +1,123 @@
+body{
+	font-family: Open Sans;
+	background-color: rgba(0,0,0,0.07);
+}
+.navbar-inverse{
+	border-radius: 0;
+}
+article>header{
+	height: 650px;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.3);
+	background-blend-mode: darken;
+	background-size: cover;
+	background-position: center center;
+	display: table;
+}
+article>header>div{
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+article>header h1{
+	margin: 20px 0;
+}
+.category{
+	background-color: #366996;
+	color: white;
+	padding: 7px 10px;
+	display: inline-block;
+}
+article .content{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+article .content p{
+	font-family: Merriweather;
+	font-size: 16px;
+	line-height: 1.5;
+}
+article .content h3{
+	font-family: Merriweather;
+	line-height: 1.5;
+}
+article .content .excerpt{
+	font-family: Merriweather;
+	font-size: 20px;
+	line-height: 1.5;
+	font-style: italic;
+	font-weight: 700;
+}
+
+.obfuscator {
+	position: fixed;
+	background-color: transparent;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 4;
+	visibility: hidden;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.obfuscator--visible {
+	background-color: rgba(0,0,0,0.5);
+	visibility: visible;
+	transform: all 0.5ss;
+}
+.hamburger{
+	position: fixed;
+}
+.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after{
+	width: 30px
+}
+.hamburger-label{
+	vertical-align: super;
+	font-weight: 700;
+	font-size: ;
+}
+.ad{
+	padding: 25px;
+}
+.share{
+	background-color: #eee;
+	padding: 25px;
+	margin: 25px 0;
+}
+.share .ssk-group{
+	text-align: right;
+}
+.comments{
+	margin: 25px 0;
+}
+@media(max-width: 767px){
+	article .content{
+		padding-top: 25px;
+	}
+	article .content p{
+		font-family: Merriweather;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	article .content h3{
+		font-family: Merriweather;
+		line-height: 1.5;
+	}
+	article .content .excerpt{
+		font-family: Merriweather;
+		font-size: 20px;
+		line-height: 1.5;
+		font-style: italic;
+		font-weight: 700;
+	}
+	.share{
+		padding: 20px 15px;
+	}
+	.share .ssk-group, .share h4{
+		text-align: center;
+		margin-top: 0;
+	}
+}
