@@ -1,0 +1,54 @@
+.category{
+	color: white;
+	padding: 7px 10px;
+	display: inline-block;
+}
+.carousel-cell{
+  height: 650px;
+  width: 100%;
+  background-size:cover;
+  background-position: center center;
+  background-color: rgba(0,0,0,0.3);
+  background-blend-mode: darken;
+}
+.carousel-cell>a>div>.container{
+  color: white;
+  text-align:center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+}
+.carousel-cell>a>div>.container h1{
+  margin: 20px 0 20px 0;
+}
+@media(max-width: 767px){
+  .carousel-cell{
+    height: 650px;
+    width: 100%;
+    background-size:cover;
+    background-position: center center;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: darken;
+  }
+  .carousel-cell>a>div>.container{
+    color: white;
+    text-align:center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+  }
+  .carousel-cell{
+    height: 300px;
+    width: 100%;
+  }
+  .carousel-cell>a>div>.container h1{
+    margin: 15px 0 20px 0;
+		font-size: 18px;
+  }
+  .carousel-cell>a>div>.container h4{
+    margin: 15px 0 20px 0;
+		font-size: 12px;
+  }
+}

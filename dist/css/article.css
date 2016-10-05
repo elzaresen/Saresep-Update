@@ -1,10 +1,4 @@
-body{
-	font-family: Open Sans;
-	background-color: rgba(0,0,0,0.07);
-}
-.navbar-inverse{
-	border-radius: 0;
-}
+
 article>header{
 	height: 650px;
 	width: 100%;
@@ -21,10 +15,9 @@ article>header>div{
 	vertical-align: middle;
 }
 article>header h1{
-	margin: 20px 0;
+	margin: 15px 0 20px 0;
 }
 .category{
-	background-color: #366996;
 	color: white;
 	padding: 7px 10px;
 	display: inline-block;
@@ -50,35 +43,7 @@ article .content .excerpt{
 	font-weight: 700;
 }
 
-.obfuscator {
-	position: fixed;
-	background-color: transparent;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 4;
-	visibility: hidden;
-	transition-property: background-color;
-	transition-duration: 0.5s;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.obfuscator--visible {
-	background-color: rgba(0,0,0,0.5);
-	visibility: visible;
-	transform: all 0.5ss;
-}
-.hamburger{
-	position: fixed;
-}
-.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after{
-	width: 30px
-}
-.hamburger-label{
-	vertical-align: super;
-	font-weight: 700;
-	font-size: ;
-}
+
 .ad{
 	padding: 25px;
 }
@@ -93,7 +58,105 @@ article .content .excerpt{
 .comments{
 	margin: 25px 0;
 }
+.related-articles{
+	/*padding: 10px 5px;*/
+	margin: 0;
+	/*border-bottom: #175f94 1px solid;*/
+}
+.related{
+	color: #333;
+	display: inline-block;
+	background-color: white;
+	text-decoration: none;
+	border-bottom: 1px #eee solid;
+	padding: 0;
+}
+hr{
+	border-color: darkgray;
+}
+.related>.info i{
+	margin: 0 5px;
+}
+.related{
+	padding: 10px 0;
+}
+.related:hover h5{
+	text-decoration: underline;
+	color: #333;
+}
+.related>div{
+	/*height: 75px;*/
+	/*border: 1px #eee solid;*/
+}
+a>.related .featured{
+	padding: 0;
+}
+.widget-title{
+	background-color: #175f94;
+	color: white;
+	padding: 10px;
+	margin: 0;
+}
+main>.container{
+		margin-top: -50px;
+		background-color: white;
+	}
+.related-articles .featured{
+	float: left;
+	display: inline-block;
+}
+.related-articles .info{
+	margin-left: 110px;
+}
+.related-articles .info>h5{
+	margin: 0;
+}
+.related-articles .featured>img{
+	width: 100px;
+}
+.other-articles .featured{
+	float: left;
+	display: inline-block;
+	max-height: 150px;
+	overflow-y: hidden;
+}
+.other-articles .related{
+	padding: 10px;
+}
+.other-articles .featured>img{
+	width: 100%;
+}
+.other-articles .info{
+	display: inline-block;
+}
 @media(max-width: 767px){
+	article>header{
+		height: 300px;
+		width: 100%;
+		text-align: center;
+		background-color: rgba(0,0,0,0.3);
+		background-blend-mode: darken;
+		background-size: cover;
+		background-position: center center;
+		display: table;
+	}
+	article>header>div{
+		color: white;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	article>header h1{
+		margin: 15px 0 20px 0;
+		font-size: 22px;
+	}
+	article>header h4{
+		margin: 15px 0 20px 0;
+		font-size: 12px;
+	}
+	main>.container{
+		margin-top: 0;
+		background-color: white;
+	}
 	article .content{
 		padding-top: 25px;
 	}
@@ -108,7 +171,7 @@ article .content .excerpt{
 	}
 	article .content .excerpt{
 		font-family: Merriweather;
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 1.5;
 		font-style: italic;
 		font-weight: 700;
@@ -120,4 +183,39 @@ article .content .excerpt{
 		text-align: center;
 		margin-top: 0;
 	}
+}
+.materialize {
+	background: #fff;
+	border-radius: 2px;
+	/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.widget{
+	display: inline-block;
+	margin-top: 25px;
+}
+.card {
+  background: #fff;
+  border-radius: 0px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
