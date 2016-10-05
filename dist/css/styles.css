@@ -166,5 +166,8 @@ input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([re
 .btn-sun:hover{
     background-color: #f0c52b;
 }
-
-
+@media(min-width: 991px){
+    .slicknav_menu{
+        display: none;
+    }
+}
