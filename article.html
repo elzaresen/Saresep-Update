@@ -4,8 +4,9 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/social-share-kit.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/header.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/hamburgers.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/article.css">
-
+	<!-- <link rel="stylesheet" type="text/css" href="dist/css/normalize.css"> -->
 	<title>Түркия Орусия жана Израил менен эмнеге элдешти? - Саресеп</title>
 	<meta charset="UTF-8">
 	<meta name="department" content="legal">
@@ -15,10 +16,29 @@
 	<meta name="author" content="Саресеп ">
 	<meta name="keywords" content="">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700i|Open+Sans:400,600&subset=cyrillic-ext" rel="stylesheet">
+
 </head>
 <body>
-	<header>
-		<nav class="navbar card-1 navbar-saresep hidden-sm hidden-xs" style="margin: 0">
+	<div class="hamburger hamburger--slider zema-nav-trigger" onclick="zemanav()" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+		<div class="hamburger-box">
+			<div class="hamburger-inner"></div>
+		</div>
+	</div>
+	<!-- <button type="button" class="" onclick="zemanav()">Menu</button> -->
+	<nav class="zema-nav">
+		<ul>
+			<li><a href="/category/16/1">Экономика</a></li>
+			<li><a href="/category/3/1">Саясат</a></li>
+			<li><a href="/category/7/1">Укук</a></li>
+			<li><a href="/category/13/1">Дүйнө</a></li>
+			<li><a href="/category/17/1">Адабият</a></li>
+			<li><a href="/category/11/1">Суроо-жооп</a></li>
+			<li><a href="/category/1/1">Кумурзстан</a></li>
+		</ul>
+	</nav>
+	<header class="header">
+		<!-- <img alt="logo" src="logo-main.svg" height="50" style="margin-top: -3px;"> -->
+		<!-- <nav class="navbar card-1 navbar-saresep hidden-sm hidden-xs" style="margin: 0">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -80,7 +100,7 @@
 			<li><a href="/category/11/1">Суроо-жооп</a></li>
 			<li><a href="/category/1/1">Кумурзстан</a></li>
 			<li><a href="/category/19/1">RU</a></li>
-		</ul>
+		</ul> -->
 	</header>
 	<main class="">
 		<article>
@@ -150,59 +170,59 @@
 						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 					</div>
 					<div class="other-articles">
-							<div class="widget">
-								<h4 class="widget-title">БАШКА МАКАЛДАР</h4>
-								<div class="other-articles">
-									<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
-											<div class="featured">
-												<img alt="Erdogan" src="image.jpg">
-											</div>
-											<div class="info">
-												<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-											</div>
-									</a>
-									<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
-											<div class="featured">
-												<img alt="Erdogan" src="image.jpg">
-											</div>
-											<div class="info">
-												<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-											</div>
-									</a>
-									<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
-											<div class="featured">
-												<img alt="Erdogan" src="image.jpg">
-											</div>
-											<div class="info">
-												<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-											</div>
-									</a>
-									<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
-											<div class="featured">
-												<img alt="Erdogan" src="image.jpg">
-											</div>
-											<div class="info">
-												<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-											</div>
-									</a>
-									<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
-											<div class="featured">
-												<img alt="Erdogan" src="image.jpg">
-											</div>
-											<div class="info">
-												<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-											</div>
-									</a>
-									<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
-											<div class="featured">
-												<img alt="Erdogan" src="image.jpg">
-											</div>
-											<div class="info">
-												<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-											</div>
-									</a>
-								</div>
+						<div class="widget">
+							<h4 class="widget-title">БАШКА МАКАЛДАР</h4>
+							<div class="other-articles">
+								<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
+									<div class="featured">
+										<img alt="Erdogan" src="image.jpg">
+									</div>
+									<div class="info">
+										<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+									</div>
+								</a>
+								<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
+									<div class="featured">
+										<img alt="Erdogan" src="image.jpg">
+									</div>
+									<div class="info">
+										<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+									</div>
+								</a>
+								<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
+									<div class="featured">
+										<img alt="Erdogan" src="image.jpg">
+									</div>
+									<div class="info">
+										<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+									</div>
+								</a>
+								<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
+									<div class="featured">
+										<img alt="Erdogan" src="image.jpg">
+									</div>
+									<div class="info">
+										<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+									</div>
+								</a>
+								<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
+									<div class="featured">
+										<img alt="Erdogan" src="image.jpg">
+									</div>
+									<div class="info">
+										<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+									</div>
+								</a>
+								<a href="#" class="related col-md-4 col-sm-4 col-xs-6">
+									<div class="featured">
+										<img alt="Erdogan" src="image.jpg">
+									</div>
+									<div class="info">
+										<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+									</div>
+								</a>
 							</div>
+						</div>
 					</div>
 				</div>
 			</article>
@@ -211,52 +231,52 @@
 					<h4 class="widget-title">БАШКА МАКАЛДАР</h4>
 					<div class="related-articles">
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 					</div>
 				</div>
@@ -265,52 +285,52 @@
 					<h4 class="widget-title">БАШКА МАКАЛДАР</h4>
 					<div class="related-articles">
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 						<a href="#" class="related col-md-12 col-sm-6">
-								<div class="featured">
-									<img alt="Erdogan" src="image.jpg">
-								</div>
-								<div class="info">
-									<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-								</div>
+							<div class="featured">
+								<img alt="Erdogan" src="image.jpg">
+							</div>
+							<div class="info">
+								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+							</div>
 						</a>
 					</div>
 				</div>
@@ -346,6 +366,16 @@
 			lg();
 
 		});
+		function zemanav() {
+			if (!$('.zema-nav').hasClass('active')){
+				$('.zema-nav').addClass('active');
+				$('.zema-nav-trigger').addClass('is-active');
+			}
+			else {
+				$('.zema-nav').removeClass('active')
+				$('.zema-nav-trigger').removeClass('is-active')
+			}
+		}
 	</script>
 </body>
 </html>
