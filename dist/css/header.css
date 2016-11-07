@@ -1,4 +1,6 @@
 
+
+
 .zema-nav-trigger{
   position: fixed;
   top: 0;
@@ -25,19 +27,19 @@
   top: 0;
   left: -300px;
   height: 100%;
-  width: 0px;
+  width: 300px;
   background-color: white;
-  z-index: 0;
-  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+  transition: all 0.15s ease-in-out;
   padding: 15px;
   padding-top: 65px;
   font-family: 'Open Sans';
-  /*font-weight: 600;*/
+  will-change: width;
 }
 .zema-nav.active{
-  width: 300px;
-  z-index: 9999;
-  left: 0;
+  -ms-transform: translate(300px, 0px); /* IE 9 */
+  -webkit-transform: translate(300px, 0px); /* Safari */
+  transform: translate(300px, 0px);
 }
 .zema-nav>ul{
   list-style: none;
@@ -48,8 +50,3 @@
   font-size: 18px;
   line-height: 1.8;
 }
-/*.header{
-  padding: 10px;
-  padding-left: 75px;
-  background-color: #996633;
-}*/
