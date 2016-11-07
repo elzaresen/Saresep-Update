@@ -1,4 +1,6 @@
-
+html{
+  touch-action: manipulation;
+}
 
 
 .zema-nav-trigger{
