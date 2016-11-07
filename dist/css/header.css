@@ -1,54 +1,186 @@
 html{
-  touch-action: manipulation;
+	touch-action: manipulation;
+	--primary-color: #0C2C5D;
+}
+.header{
+	/*height: 100px;*/
+	width: 100%;
+	background-color: var(--primary-color);
+	position: absolute;
+	z-index: 3;
+}
+.header .logo{
+	text-transform: uppercase;
+	color: white;
+	font-size: 33px;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-left: 15px;
+	transition: all 0.15s ease-in-out;
 }
 
-
+.hamburger-box {
+	width: 30px;
+	height: 24px;
+	display: inline-block;
+	position: relative;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+	width: 30px;
+	height: 2px;
+	background-color: #000;
+	border-radius: 4px;
+	position: absolute;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	transition-property: transform, -webkit-transform;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+}
 .zema-nav-trigger{
-  position: fixed;
-  top: 0;
-  left: 0px;
-  transition: all 0.3s ease-in-out;
+	padding: 10px;
+	padding-bottom: 5px;
+	position: relative;
+	transition: all 0.15s ease-in-out;
+	padding-right: 0;
+	padding-left: 0;
 }
 .zema-nav-trigger .hamburger-inner,
 .zema-nav-trigger .hamburger-inner:after,
 .zema-nav-trigger .hamburger-inner:before{
-  background-color: white;
-  transition: all 0.3s ease-in-out;
+	background-color: white;
+	transition: all 0.15s ease-in-out;
 }
 .zema-nav-trigger.is-active{
-  /*left: 300px;*/
-  z-index: 99999;
+	/*left: 300px;*/
+	/*z-index: 99999;*/
 }
 .zema-nav-trigger.is-active .hamburger-inner,
 .zema-nav-trigger.is-active .hamburger-inner:after,
 .zema-nav-trigger.is-active .hamburger-inner:before{
-  background-color: black;
+	/*background-color: black;*/
 }
 .zema-nav{
-  position: fixed;
-  top: 0;
-  left: -300px;
-  height: 100%;
-  width: 300px;
-  background-color: white;
-  z-index: 9999;
-  transition: all 0.15s ease-in-out;
-  padding: 15px;
-  padding-top: 65px;
-  font-family: 'Open Sans';
-  will-change: width;
+	position: absolute;
+	top: 0;
+	left: -300px;
+	height: 100%;
+	width: 300px;
+	background-color: var(--primary-color);
+	z-index: 3;
+	transition: all 0.15s ease-in-out;
+	padding: 15px;
+	padding-top: 65px;
+	padding-bottom: 0;
+	font-family: 'Open Sans';
+	will-change: width;
+	opacity: 0;
 }
 .zema-nav.active{
-  -ms-transform: translate(300px, 0px); /* IE 9 */
-  -webkit-transform: translate(300px, 0px); /* Safari */
-  transform: translate(300px, 0px);
+	-ms-transform: translate(300px, 0px); /* IE 9 */
+	-webkit-transform: translate(300px, 0px); /* Safari */
+	transform: translate(300px, 0px);
+	opacity: 1;
+}
+@media (max-width: 543px){
+	.zema-nav{
+		left: -100%;
+		width: 100%;
+	}
+	.zema-nav.active{
+		-ms-transform: translate(100%, 0px); /* IE 9 */
+		-webkit-transform: translate(100%, 0px); /* Safari */
+		transform: translate(100%, 0px);
+	}
+}
+@media (min-width: 992px){
+	.zema-nav-trigger, .zema-nav, .zema-nav.active{
+		display: none;
+	}
+	.header .logo{
+	padding-left: 0px;
+	}
+	
+}
+@media(max-width: 991px){
+	.header{
+		position: fixed;
+	}
 }
 .zema-nav>ul{
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 .zema-nav>ul>li>a{
-  color: #333;
-  font-size: 18px;
-  line-height: 1.8;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.8;
+}
+.newspapers{
+	position: absolute;
+	bottom: 95px;
+	left: 0;
+	padding: 15px 15px 12px 15px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+.newspapers img{
+	height: 75px;
+	/*margin-bottom: 10px;*/
+}
+.newspapers div{
+	display: inline-block;
+	padding-left: 10px; 
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+.currencies-in-navbar{
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	font-size: medium;
+	width: 100%;
+	font-family: 'Roboto Condensed'
+}
+.currencies-in-navbar div{
+	padding: 5px 0;
+	text-align: center;
+}
+.glyphicon-triangle-bottom{
+	color: red;
+}
+.glyphicon-triangle-top{
+	color: green;
+}
+.zema-nav-desktop{
+	position: absolute;
+	top: 47px;
+	background-color: var(--primary-color);
+	width: 100%;
+}
+.zema-nav-desktop ul{
+	list-style: none;
+	padding-left: 0;
+	padding-left: 15px
+}
+.zema-nav-desktop ul li{
+	display: inline;
+	padding-right: 15px;
+	font-size: 18px; 
+}
+.zema-nav-desktop ul li a{
+	color: white;
+}
+.currencies-on-top{
+	color: white;
+	padding: 7px 15px;
+	font-size: medium;
+	text-align: right;
+	font-family: 'Roboto Condensed'
+}
+.currencies-on-top div{
+	padding: 5px 0;
+	text-align: center;
 }

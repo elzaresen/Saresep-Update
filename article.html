@@ -3,9 +3,9 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/social-share-kit.css">
-	<link rel="stylesheet" type="text/css" href="dist/css/header.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/hamburgers.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/article.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/header.css">
 	<!-- <link rel="stylesheet" type="text/css" href="dist/css/normalize.css"> -->
 	<title>Түркия Орусия жана Израил менен эмнеге элдешти? - Саресеп</title>
 	<meta charset="UTF-8">
@@ -16,15 +16,10 @@
 	<meta name="author" content="Саресеп ">
 	<meta name="keywords" content="">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700i|Open+Sans:400,600&subset=cyrillic-ext" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
-	<button class="hamburger hamburger--slider zema-nav-trigger" onclick="zemanav()" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
-		<div class="hamburger-box">
-			<div class="hamburger-inner"></div>
-		</div>
-	</button>
-	<!-- <button type="button" class="" onclick="zemanav()">Menu</button> -->
+	
 	<nav class="zema-nav">
 		<ul>
 			<li><a href="/category/16/1">Экономика</a></li>
@@ -35,73 +30,48 @@
 			<li><a href="/category/11/1">Суроо-жооп</a></li>
 			<li><a href="/category/1/1">Кумурзстан</a></li>
 		</ul>
+		<a href="#" class="newspapers">
+			<img src="newspaper.jpg" class="" alt="Акыркы сан">
+			<div>Все выпуски доступны в PDF</div>
+		</a>
+		<div class="currencies-in-navbar">
+			<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-bottom"></i></span> <span>USD</span> <span>68.35</span></div>
+			<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>EUR</span> <span>74.54</span></div>
+			<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>RUB</span> <span>1.091</span></div>
+			<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>KZT</span> <span>0.999</span></div>
+		</div>
 	</nav>
 	<header class="header">
-		<!-- <img alt="logo" src="logo-main.svg" height="50" style="margin-top: -3px;"> -->
-		<!-- <nav class="navbar card-1 navbar-saresep hidden-sm hidden-xs" style="margin: 0">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#"><img alt="logo" src="logo-main.svg" height="20" style="margin-top: -3px;"></a>
+		<div class="col-md-6">
+			<button class="hamburger hamburger--slider zema-nav-trigger hidden-md hidden-lg" onclick="zemanav()" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
 				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/category/16/1">Экономика</a></li>
-						<li><a href="/category/3/1">Саясат</a></li>
-						<li><a href="/category/9/1">Коом</a></li>
-						<li><a href="/category/7/1">Укук</a></li>
-						<li><a href="/category/13/1">Дүйнө</a></li>
-						<li><a href="/category/2/1">Спорт</a></li>
-						<li><a href="/category/12/1">Камчыга сап</a></li>
-						<li><a href="/category/18/1">Кабарым бар</a></li>
-						<li class="hidden-md"><a href="/category/17/1">Адабият</a></li>
-						<li class="hidden-md"><a href="/category/15/1">Ой толгоо</a></li>
-						<li class="hidden-md"><a href="/category/11/1">Суроо-жооп</a></li>
-						<li class="hidden-md"><a href="/category/1/1">Кумурзстан</a></li>
-						<li class="hidden-md"><a href="/category/19/1">RU</a></li>
-						<li class="dropdown hidden-lg">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Категория <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li class="hidden-md"><a href="/category/16/1">Экономика</a></li>
-								<li class="hidden-md"><a href="/category/3/1">Саясат</a></li>
-								<li class="hidden-md"><a href="/category/9/1">Коом</a></li>
-								<li class="hidden-md"><a href="/category/7/1">Укук</a></li>
-								<li class="hidden-md"><a href="/category/13/1">Дүйнө</a></li>
-								<li class="hidden-md"><a href="/category/2/1">Спорт</a></li>
-								<li class="hidden-md"><a href="/category/12/1">Камчыга сап</a></li>
-								<li class="hidden-md"><a href="/category/18/1">Кабарым бар</a></li>
-								<li><a href="/category/17/1">Адабият</a></li>
-								<li><a href="/category/15/1">Ой толгоо</a></li>
-								<li><a href="/category/11/1">Суроо-жооп</a></li>
-								<li><a href="/category/1/1">Кумурзстан</a></li>
-								<li><a href="/category/19/1">RU</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<ul class="menu hidden" id="menu">
+			</button>
+			<span class="logo">
+				Саресеп
+			</span>
+		</div>
+		<div class="col-sm-6 col-md-6 hidden-sm hidden-xs currencies-on-top">
+
+			<div class="col-xs-3 col-lg-4 hidden-md"></div>
+			<div class="col-xs-3 col-lg-2 col-md-3"><span><i class="glyphicon glyphicon-triangle-bottom"></i></span> <span>USD</span> <span>68.35</span></div>
+			<div class="col-xs-3 col-lg-2 col-md-3"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>EUR</span> <span>74.54</span></div>
+			<div class="col-xs-3 col-lg-2 col-md-3"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>RUB</span> <span>1.091</span></div>
+			<div class="col-xs-3 col-lg-2 col-md-3"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>KZT</span> <span>0.999</span></div>
+		</div>
+	</header>
+	<nav class="zema-nav-desktop hidden-sm hidden-xs">
+		<ul>
 			<li><a href="/category/16/1">Экономика</a></li>
 			<li><a href="/category/3/1">Саясат</a></li>
-			<li><a href="/category/9/1">Коом</a></li>
 			<li><a href="/category/7/1">Укук</a></li>
 			<li><a href="/category/13/1">Дүйнө</a></li>
-			<li><a href="/category/2/1">Спорт</a></li>
-			<li><a href="/category/12/1">Камчыга сап</a></li>
-			<li><a href="/category/18/1">Кабарым бар</a></li>
 			<li><a href="/category/17/1">Адабият</a></li>
-			<li><a href="/category/15/1">Ой толгоо</a></li>
 			<li><a href="/category/11/1">Суроо-жооп</a></li>
 			<li><a href="/category/1/1">Кумурзстан</a></li>
-			<li><a href="/category/19/1">RU</a></li>
-		</ul> -->
-	</header>
+		</ul>
+	</nav>
 	<main class="">
 		<article>
 			<header style="background-image: url('image.jpg')">
