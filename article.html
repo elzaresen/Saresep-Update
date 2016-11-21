@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/hamburgers.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/article.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/header.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/cards.css">
 	<!-- <link rel="stylesheet" type="text/css" href="dist/css/normalize.css"> -->
 	<title>Түркия Орусия жана Израил менен эмнеге элдешти? - Саресеп</title>
 	<meta charset="UTF-8">
@@ -19,60 +20,77 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
-	
-	<nav class="zema-nav">
-		<ul>
-			<li><a href="/category/16/1">Экономика</a></li>
-			<li><a href="/category/3/1">Саясат</a></li>
-			<li><a href="/category/7/1">Укук</a></li>
-			<li><a href="/category/13/1">Дүйнө</a></li>
-			<li><a href="/category/17/1">Адабият</a></li>
-			<li><a href="/category/11/1">Суроо-жооп</a></li>
-			<li><a href="/category/1/1">Кумурзстан</a></li>
-		</ul>
-		<a href="#" class="newspapers">
-			<img src="newspaper.jpg" class="" alt="Акыркы сан">
-			<div>Все выпуски доступны в PDF</div>
-		</a>
-		<div class="currencies-in-navbar">
-			<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-bottom"></i></span> <span>USD</span> <span>68.35</span></div>
-			<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>EUR</span> <span>74.54</span></div>
-			<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>RUB</span> <span>1.091</span></div>
-			<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>KZT</span> <span>0.999</span></div>
-		</div>
-	</nav>
 	<header class="header">
-		<div class="col-md-6">
-			<button class="hamburger hamburger--slider zema-nav-trigger hidden-md hidden-lg" onclick="zemanav()" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
-				<div class="hamburger-box">
-					<div class="hamburger-inner"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 set-pad">
+					<button class="hamburger hamburger--slider zema-nav-trigger hidden-md hidden-lg" onclick="zemanav()" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+					</button>
+					<span class="logo">
+						<a href="index.html">
+							Саресеп
+						</a>
+					</span>
 				</div>
-			</button>
-			<span class="logo">
-				Саресеп
-			</span>
+				<div class="hidden-sm hidden-xs daily-info text-right">
+					<h5 class="today">17:15 16 Ноября 2016, Среда</h5>
+					<div class="currencies">
+						<h5><span><i class="glyphicon glyphicon-triangle-bottom"></i></span> <span>USD</span> <span>68.35</span></h5>
+						<h5><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>EUR</span> <span>74.54</span></h5>
+						<h5><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>RUB</span> <span>1.091</span></h5>
+						<h5><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>KZT</span> <span>0.999</span></h5>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-sm-6 col-md-6 hidden-sm hidden-xs currencies-on-top">
-
-			<div class="col-xs-3 col-lg-4 hidden-md"></div>
-			<div class="col-xs-3 col-lg-2 col-md-3"><span><i class="glyphicon glyphicon-triangle-bottom"></i></span> <span>USD</span> <span>68.35</span></div>
-			<div class="col-xs-3 col-lg-2 col-md-3"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>EUR</span> <span>74.54</span></div>
-			<div class="col-xs-3 col-lg-2 col-md-3"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>RUB</span> <span>1.091</span></div>
-			<div class="col-xs-3 col-lg-2 col-md-3"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>KZT</span> <span>0.999</span></div>
+		<div class="container-fluid zema-nav-desktop">
+			<nav class="hidden-sm hidden-xs">
+				<div class="zema-nav-content">
+					<ul>
+						<li><a href="/category/16/1">Экономика</a></li>
+						<li><a href="/category/3/1">Саясат</a></li>
+						<li><a href="/category/7/1">Укук</a></li>
+						<li><a href="/category/13/1">Дүйнө</a></li>
+						<li><a href="/category/17/1">Адабият</a></li>
+						<li><a href="/category/11/1">Суроо-жооп</a></li>
+						<li><a href="/category/1/1">Кумурзстан</a></li>
+					</ul>
+					<a href="#" class="newspapers">
+						<img src="png.png" class="" alt="Акыркы сан">
+						<span>Все выпуски доступны в PDF</span>
+					</a>
+				</div>
+			</nav>
 		</div>
+		<nav class="zema-nav">
+			<div class="zema-nav-content">
+				<ul>
+					<li><a href="/category/16/1">Экономика</a></li>
+					<li><a href="/category/3/1">Саясат</a></li>
+					<li><a href="/category/7/1">Укук</a></li>
+					<li><a href="/category/13/1">Дүйнө</a></li>
+					<li><a href="/category/17/1">Адабият</a></li>
+					<li><a href="/category/11/1">Суроо-жооп</a></li>
+					<li><a href="/category/1/1">Кумурзстан</a></li>
+				</ul>
+				<a href="#" class="newspapers">
+					<img src="newspaper.jpg" class="" alt="Акыркы сан">
+					<div>Все выпуски доступны в PDF</div>
+				</a>
+				<div class="currencies-in-navbar">
+					<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-bottom"></i></span> <span>USD</span> <span>68.35</span></div>
+					<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>EUR</span> <span>74.54</span></div>
+					<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>RUB</span> <span>1.091</span></div>
+					<div class="col-xs-6"><span><i class="glyphicon glyphicon-triangle-top"></i></span> <span>KZT</span> <span>0.999</span></div>
+				</div>
+			</div>
+		</nav>
 	</header>
-	<nav class="zema-nav-desktop hidden-sm hidden-xs">
-		<ul>
-			<li><a href="/category/16/1">Экономика</a></li>
-			<li><a href="/category/3/1">Саясат</a></li>
-			<li><a href="/category/7/1">Укук</a></li>
-			<li><a href="/category/13/1">Дүйнө</a></li>
-			<li><a href="/category/17/1">Адабият</a></li>
-			<li><a href="/category/11/1">Суроо-жооп</a></li>
-			<li><a href="/category/1/1">Кумурзстан</a></li>
-		</ul>
-	</nav>
-	<main class="">
+
+	<main>
 		<article>
 			<header style="background-image: url('image.jpg')">
 				<div class="container">
@@ -198,110 +216,150 @@
 			</article>
 			<div class="col-md-4">
 				<div class="widget">
-					<h4 class="widget-title">БАШКА МАКАЛДАР</h4>
-					<div class="related-articles">
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
+					<h4 class="widget-title">Колум</h4>
+					<div class="columnists">
+						<ul>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<img src="author2.jpg" height="75" class="img-circle">
+										<div>
+											<h6 class="author">Акылай Туткучева:</h6>
+											<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<img src="author4.jpg" height="75" class="img-circle">
+										<div>
+											<h6 class="author">Эсен Өмүракунов:</h6>
+											<h5>Конституция тууралуу</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<img src="author3.jpg" height="75" class="img-circle">
+										<div>
+											<h6 class="author">Рахат Акматова:</h6>
+											<h5>Комбат Кыргызстандагы номер бир жылкы</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<img src="author2.jpg" height="75" class="img-circle">
+										<div>
+											<h6 class="author">Акылай Туткучева:</h6>
+											<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<br>
 				<div class="widget">
 					<h4 class="widget-title">БАШКА МАКАЛДАР</h4>
-					<div class="related-articles">
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
-						<a href="#" class="related col-md-12 col-sm-6">
-							<div class="featured">
-								<img alt="Erdogan" src="image.jpg">
-							</div>
-							<div class="info">
-								<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
-							</div>
-						</a>
+					<div class="category">
+						<ul>
+						<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<div class="cat-featured-image" style="background-image: url('image.jpg');"></div>
+										<div>
+											<h6 class="author">Акылай Туткучева:</h6>
+											<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<div class="cat-featured-image" style="background-image: url('image.jpg');"></div>
+										<div>
+											<h6 class="author">Акылай Туткучева:</h6>
+											<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<div class="cat-featured-image" style="background-image: url('image.jpg');"></div>
+										<div>
+											<h6 class="author">Акылай Туткучева:</h6>
+											<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<div class="cat-featured-image" style="background-image: url('image.jpg');"></div>
+										<div>
+											<h6 class="author">Акылай Туткучева:</h6>
+											<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<div class="cat-featured-image" style="background-image: url('image.jpg');"></div>
+										<div>
+											<h6 class="author">Акылай Туткучева:</h6>
+											<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<div class="cat-featured-image" style="background-image: url('image.jpg');"></div>
+										<div>
+											<h6 class="author">Акылай Туткучева:</h6>
+											<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<div class="cat-featured-image" style="background-image: url('image.jpg');"></div>
+										<div>
+											<h6 class="author">Акылай Туткучева:</h6>
+											<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+							<li class="col-xs-12">
+								<a href="article.html">
+									<article>
+										<div class="cat-featured-image" style="background-image: url('image.jpg');"></div>
+										<div>
+											<h6 class="author">Акылай Туткучева:</h6>
+											<h5>Түркия Орусия жана Израил менен эмнеге элдешти?</h5>
+										</div>
+									</article>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="ad col-md-12 col-sm-6 col-xs-12">
